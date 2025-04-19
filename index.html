@@ -9,13 +9,13 @@
     <button id="counter">0</button> yards.
     <button id="clear">Clear</button>
     <script>
-        document.querySelector("button").onclick = ()=> {
-            document.querySelector("button").value = parseFloat(document.querySelector("button").value)+ 2.3;
-            localStorage.setItem("yards", document.querySelector("button").value)
+        document.querySelector("#counter").onclick = ()=> {
+            document.querySelector("#counter").value = parseFloat(document.querySelector("#counter").value)+ 2.3;
+            localStorage.setItem("yards", document.querySelector("#counter").value)
         }
         document.querySelector("#clear").onclick = ()=> {
-            document.querySelector("button").value = 0;
-            localStorage.setItem("yards", document.querySelector("button").value)
+            document.querySelector("#counter").value = 0;
+            localStorage.setItem("yards", document.querySelector("#counter").value)
         }
 
     </script>
