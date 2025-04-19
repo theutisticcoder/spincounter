@@ -10,7 +10,7 @@
     <button id="clear">Clear</button>
     <script>
         document.querySelector("button").onclick = ()=> {
-            document.querySelector("button").value += 2.3;
+            document.querySelector("button").value = parseFloat(document.querySelector("button").value)+ 2.3;
             localStorage.setItem("yards", document.querySelector("button").value)
         }
         document.querySelector("#clear").onclick = ()=> {
