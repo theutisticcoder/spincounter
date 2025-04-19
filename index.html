@@ -10,12 +10,12 @@
     <button id="clear">Clear</button>
     <script>
         document.querySelector("#counter").onclick = ()=> {
-            document.querySelector("#counter").value = parseFloat(document.querySelector("#counter").value)+ 2.3;
-            localStorage.setItem("yards", document.querySelector("#counter").value)
+            document.querySelector("#counter").innerHTML = parseFloat(document.querySelector("#counter").innerHTML)+ 2.3;
+            localStorage.setItem("yards", document.querySelector("#counter").innerHTML)
         }
         document.querySelector("#clear").onclick = ()=> {
-            document.querySelector("#counter").value = 0;
-            localStorage.setItem("yards", document.querySelector("#counter").value)
+            document.querySelector("#counter").innerHTML = 0;
+            localStorage.setItem("yards", document.querySelector("#counter").innerHTML)
         }
 
     </script>
