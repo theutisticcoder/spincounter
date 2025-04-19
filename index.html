@@ -17,7 +17,9 @@
             document.querySelector("#counter").innerHTML = 0;
             localStorage.setItem("yards", document.querySelector("#counter").innerHTML)
         }
-
+        window.onload = ()=>{
+            if(localStorage.getItem("yards") != null) document.querySelector("#counter").innerHTML = localStorage.getItem("yards")     
+        }
     </script>
 </body>
 </html>
